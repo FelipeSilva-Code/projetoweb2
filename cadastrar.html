@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <meta name="color-scheme" content="light dark" />
+    <script src="../futstats/js/cadastrar.js" defer></script>
     <title>Jogadores</title>
 </head>
 
@@ -31,14 +32,14 @@
                 </li>
             </ul>
             <ul>
-                <li><a href="/index.html">Lista</a></li>
-                <li><a href="/cadastrar.html">Cadastrar</a></li>
+                <li><a href="./index.html">Lista</a></li>
+                <li><a href="./cadastrar.html">Cadastrar</a></li>
             </ul>
         </nav>
 
         <section>
 
-            <article class="form" >
+            <form id="form" class="form" >
                 <h3>Cadastrar Jogador</h3>
                 <input type="text" name="nome" placeholder="nome" id="nome" />
                 <input type="text" name="time" placeholder="time" id="time" />
@@ -47,14 +48,12 @@
                 <input type="text" name="foto" placeholder="url da foto" id="foto" />
 
                 <div class="grid">
-                    <a role="button" href="/index.html" class="outline">cancelar</a>
-                    <button>cadastrar</button>
+                    <a role="button" href="./index.html" class="outline">cancelar</a>
+                    <button id="btnCadastrar">cadastrar</button>
                 </div>
 
-            </article>
-
-
-
+            </form>
+       
         </section>
     </main>
 
